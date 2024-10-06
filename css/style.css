@@ -1,0 +1,798 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    font-size: 60px;
+    color: #292e3d;
+    font-weight: 600;
+}
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 36px;
+    color: #292E3D;
+    font-weight: 700;
+}
+h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: #2947A9;
+    text-transform: uppercase;
+}
+.container{
+    max-width: 1216px;
+    width: 100%;
+    margin: auto;
+}
+.hover_effect{
+    transition: 0.4s;
+    cursor: pointer;
+}
+.hover_effect:hover{
+    transform: scale(1.1);
+}
+/* =========================================
+*=============Header aria design============
+============================================*/
+nav{
+    background-color: #fff;
+    /* padding: 30px 0px; */
+}
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_logo{
+    padding: 16px 0px;
+}
+.nav_manu{
+    padding: 30px 0;
+    margin-left: 21.39px;
+}
+.nav_url{
+    display: flex;
+    gap: 36.59px;
+}
+.nav_url li{
+    cursor: pointer;
+    transition: 0.4s;
+}
+.nav_url li:hover{
+    transform: scale(1.1);
+}
+.nav_url li:last-child a{
+    color: #F9995D;
+}
+.nav_manu a{
+    font-weight: 700;
+    color: #14171F;
+    font-size: 14px;
+}
+.hero{
+    background-image: url("../images/hero_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -1px;
+    position: relative;
+}
+.hero_duco{
+    max-width: 556px;
+}
+.hero_duco h1{
+    padding: 238px 0;
+    letter-spacing: 3px;
+
+}
+.hero_futurePJ{
+    max-width: 416px;
+    text-align: center;
+    border-radius: 1px 1px 0 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.hero_futurePJ_duco{
+    background-color: #3559C7;
+    color: #fff;
+}
+.hero_futurePJ_duco h4{
+    font-size: 20px;
+    font-weight: 700;
+    padding:20px 0;
+}
+.hero_futurePJ_duco p{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0 52px 26px 52px;
+}
+.hero_futurePJ_btn{
+    color: #fff;
+    display: flex;
+    gap: 1px;
+    background-color: #fff;
+    justify-content: space-between;
+}
+.hero_futurePJ_btn div{
+    background-color: #292E3D;
+    padding-top: 7.13px;
+}
+.hero_futurePJ_btn a p{
+    font-size: 18px;
+}
+.futurePJ_btn_back , .futurePJ_btn_next{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    font-size: 13.17px;
+    padding: 9.5px 64.4px;
+}
+.futurePJ_btn_back img , .futurePJ_btn_next img{
+    width:43px;
+    max-height: max-content;
+    margin-top: 2px;
+}
+/* =========================================
+*=============Reasons aria design===========
+============================================*/
+.reasons{
+    background-color: #fff;
+    padding: 60px 0 84px;
+}
+.reasons h3{
+    text-align: center;
+}
+.reasons_docu{
+    display: flex;
+    justify-content: center;
+    gap: 66px;
+    padding-top: 50px;
+}
+.reasons_docu div{
+    border: 1.4px solid #E0E3EB;
+    border-radius: 4px;
+    padding: 18.6px 20px 38.6px;
+    max-width: 292px;
+}
+.reasons_docu img{
+    width: 40px;
+}
+.reasons_docu h4{
+    color:#3D445C ;
+    padding: 18px 0;
+}
+.reasons_docu p{
+    color: #858EAD;
+    font-size: 16px;
+}
+/* =========================================
+*=============About us aria design==========
+============================================*/
+.about_us{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 74px 0 202px;
+
+}
+.about_us_img{
+    max-width: 920px;
+
+}
+.about_us_img img{
+    width: 100%;
+}
+.about_us_docu{
+    max-width: 488px;
+    background-color: #2947A9;
+    padding: 50px 40px;
+    margin: 73px 0 73px -174px;
+}
+.about_us_docu h3{
+    color: #fff;
+}
+.about_us_docuP{
+    padding: 37px 0 74px;
+    font-size: 14.63px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.about_us_docuP p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+.about_us_btn{
+    max-width: 219px;
+    background-color: #fff;
+    border-radius: 4.39px;
+    padding: 16px 20px;
+}
+.about_us_btn a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2947A9;
+}
+/* =========================================
+*=============Services aria design=======
+============================================*/
+.services{
+    background-color: #F6F8F7;
+    padding: 40px 0 76px;
+}
+.services h3{
+    color: #292E3D;
+    text-align: center;
+    padding-bottom: 44px;
+}
+.services_duco{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 98px;
+    grid-row-gap: 48px;
+    padding: 0 101px;
+}
+.services_duco div{
+    max-width: 271px;
+    border-radius: 2.93px;
+    background-color: #fff;
+    color: #2947A9;
+    margin: auto;
+    text-align: center;
+    padding: 38px 0;
+    cursor: pointer;
+}
+.services_duco img{
+    width: 40px;
+    height: 40px;
+    margin: 0 115px;
+}
+.services_duco h4{
+    font-weight: 600;
+    padding-top: 38.6px;
+}
+.services_duco div:nth-of-type(even) {
+    background-color:#2947A9;
+    color: #fff;
+    position: relative;
+}
+.services_duco div{
+    position: relative;
+}
+.construction::after,
+.renovation::after,
+.consultation2::after,
+.repair::after,
+.architecture::after,
+.electric::after{
+        content: "";
+        width: 60px;
+        border: 1.46px solid #E0E3EB;
+        position: absolute;
+        left: 50%;
+        margin-left: -37px;
+        top: 50%;
+        margin-top: 10px;
+}
+/* =========================================
+*==========Achievement aria Design=====
+============================================*/
+.achievement{
+    display: flex;
+    justify-content: space-between;
+    padding: 122px 25px 177px 97px;
+    gap: 152px;
+}
+.achievement_awards{
+    max-width: 580px;
+    width: 100%;
+}
+.achievement_awards p{
+    font-size: 24px;
+    color: #667299;
+    position: relative;
+    padding-left: 30px;
+}
+.achievement_awards p::before{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 28px;
+    background-color: #F9995D;
+    left: 12px;
+
+}
+.achievement_awards div{
+    border-radius: 4px;
+}
+.achievement_project_clients{
+    display: flex;
+    position: relative;
+}
+.achievement_clients{
+    width: 280px;
+    padding: 30px;
+    position: relative;
+    margin-left: -51px;
+    position: absolute;
+    left: 361px;
+    box-shadow: 3px 7px 22px -9px #0000004a;
+    background: #fff;
+}
+.achievement_clients img{
+    position: absolute;
+    width: 97px;
+    object-fit: cover;
+    top: -20px;
+    right: 0px;
+}
+.achievement_project{
+    width: 361px;
+    padding: 30px;
+    position: relative;
+    margin-top: 100px;
+    box-shadow: 3px 7px 22px -9px #0000004a;
+}
+.achievement_project img{
+    position: absolute;
+    width: 79px;
+    object-fit: cover;
+    top: -48px;
+    left: -33px;
+}
+.achievement_awards_business{
+    display: flex;
+    position: relative;
+}
+.achievement-business_awards{
+    width: 276px;
+    padding: 30px;
+    position: relative;
+    position: absolute;
+    top: -13.5px;
+    left: 245px;
+    box-shadow: 3px 7px 22px -9px #0000004a;
+    background: #fff;
+}
+.achievement-business_awards img{
+    position: absolute;
+    width: 79px;
+    object-fit: cover;
+    top: -13px;
+    right: -28px;
+}
+.achievement_business{
+    width: 333px;
+    padding: 30px;
+    position: relative;
+    margin: 93px 0 0 46px;
+    box-shadow: 3px 7px 22px -9px #0000004a;
+}
+.achievement_business img{
+    position: absolute;
+    width: 79px;
+    object-fit: cover;
+    right: -38px;
+    bottom: -38px;
+}
+.achievement_experience h1{
+    color: #2947A9;
+    font-weight: 700;
+    padding-top: 50px;
+}
+.achievement_experience p{
+    font-size: 20px;
+    color:#525B7A;
+    padding: 40px 0 51px;
+    max-width: 330px;
+}
+.achievement_experience_btn{
+    background-color:#2947A9 ;
+    width: 176px;
+    padding: 16px 0;
+    border-radius: 2px;
+}
+.achievement_experience_btn a{
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+}
+/* =========================================
+*=========Consultation us aria Design=======
+============================================*/
+.consultation{
+    background-image: url("../images/unsplash_MP0bgaS_d1c.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.consultation_body{
+    display: flex;
+    justify-content: space-between;
+    padding: 99px 0;
+}
+.consultation_contact h3{
+    color: #fff;
+    padding-bottom: 30px;
+}
+.consultation_contact p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+.consultation_contact_number{
+    display: flex;
+    gap: 10px;
+}
+.consultation_contact_number p:last-child{
+    position: relative;
+}
+.consultation_contact_number p:last-child::after{
+    content: "";
+    width: 99%;
+    border: 1px solid #E0E3EB;
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    margin-top: 11px;
+}
+.consultation_btn{
+    margin: 24px 0;
+    border: 2px solid #fff;
+    padding: 16px 20px;
+}
+.consultation_btn a{
+    font-size: 18px;
+    font-weight: 600;
+}
+/* =========================================
+*=============Project  aria design==========
+============================================*/
+.project{
+    padding: 88px 0 138px;
+}
+.project_body{
+    display: flex;
+    justify-content: space-between;
+}
+.project h3{
+    color: #292E3D;
+}
+.project_duco h4{
+    color:#2947A9;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 40px 0 20px 16px;
+    position: relative;
+}
+.project_duco h4::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 28px;
+    background-color: #2947A9;
+    left: 0px;
+}
+.project_duco li{
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.project_duco li a {
+    color: #C2C7D6;
+    font-size: 24px;
+    font-weight: 500px;
+}
+.project_demo_body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+    column-gap: 32px;
+    max-width: 800px;
+}
+.project_demo_body div{
+    max-width: 384px;
+    width: 100%;
+}
+.project_demo_document{
+    background-color:#2947A9;
+    color: #fff;
+    padding: 12px 12px;
+    margin-top: -6px;
+}
+.project_demo_document h4{
+    padding-bottom: 12px;
+    letter-spacing: 0.4px;
+}
+.project_demo_document p{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.22px;
+}
+.project_demo_btn{
+    display: flex;
+    margin-top: 32px;
+}
+.project_demo_dot ul{
+    display: flex;
+    gap: 27px;
+    padding: 0 33px;
+}
+.project_demo_dot ul li{
+    width: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+}
+.project_demo_btn a p{
+    font-size: 18px;
+}
+.project_demo_btn img{
+    max-width: 26px;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.owl-dot span{
+    background-color: #F6F8F7 !important;
+    font-size: 16px !important;
+}
+.owl-dot.active span{
+    background-color: #2947A9 !important;
+    font-size: 16px !important;
+
+}
+.project_demo_btn_back,.project_demo_btn_next{
+    background-color: #292E3D;
+    color: #fff;
+    max-width: 295px;
+    width: 100%;
+    padding: 21.5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.project_demo_btn_back img, .project_demo_btn_next img{
+    width: 26px;
+}
+.project button.owl-prev,.project button.owl-next{
+    background-color: #292E3D;
+    color: #fff;
+    max-width: 295px;
+    width: 100%;
+    padding: 21.5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: block;
+}
+
+
+.owl-dots .owl-dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/white_dot.png') no-repeat center; /* Replace with your inactive dot image */
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    margin: 0 !important;
+}
+
+.owl-dots .owl-dot.active {
+    background: url('../images/blue_dot.png') no-repeat center; /* Replace with your active dot image */
+    background-size: cover;
+}
+.owl-nav {
+    display: flex;
+    justify-content: space-around;
+}
+.owl-theme .owl-dots .owl-dot span {
+    margin: 0;
+}
+.owl-dots {
+    margin-top: -38px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.project_demo.owl-carousel.owl-theme.owl-loaded.owl-drag {
+    max-width: 800px;
+}
+
+
+/* =========================================
+*=============footer aria design============
+============================================*/
+.contact_us{
+    background-color: #F6F8F7;
+}
+.contact_body{
+    padding: 60px 312px;
+}
+.contact_us_docu{
+    text-align: center;
+}
+.contact_us_docu p{
+    font-size: 20px;
+    color: #292E3D;
+    padding: 20px 0 38px;
+}
+.contact_us_input_contactingPhone{
+    padding: 20px 0;
+}
+.contact_us_input_indicatesRequired{
+    padding: 8px 0 28px;
+}
+.contact_us_input form::placeholder{
+    font-size: 18px;
+    font-weight: 400;
+}
+.contact_us_input form input,
+.contact_us_input textarea::placeholder{
+    padding: 10px 8px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+  }
+ 
+  .contact_us_input_nameEmail, 
+  .contact_us_input_contactingPhone{
+    display: flex;
+    gap: 32px;
+  }
+  .contact_us_input input{
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #E0E3EB;
+  }
+  .contact_us_input textarea{
+    width: 100%;
+    border: 1px solid #E0E3EB;
+    resize: none;
+  }
+  .contact_us_input_indicatesRequired{
+    color: #667299;
+  }
+  .contact_us_input_indicatesRequired span{
+    color: #C40303;
+  }
+  .contact_us_btn{
+    cursor: pointer;
+  }
+  form .contact_us_btn input{
+    padding: 16px 0;
+    max-width: 271px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background: #2947A9;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    justify-content: center;
+    border-radius: 2px;
+    border: none;
+}
+.contact_us_input select{
+    color: #A3AAC2;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 0 28px;
+    font-family: "Work Sans", sans-serif;
+    width: 100%;
+    padding: 10px 9px;
+    border: 1px solid #E0E3EB;
+  }
+  .contact_us_input select option{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Work Sans", sans-serif;
+  }
+  ::placeholder{
+    color: #A3AAC2;
+  }
+
+
+/* =========================================
+*=============footer aria design============
+============================================*/
+.footer_widget{
+    padding: 85px 0 80px;
+}
+.footer_widget_contact_body div{
+    padding-bottom: 32px;
+}
+.footer_widget_contact_body p{
+    font-size: 20px;
+}
+.footer_widget_address{
+    display: flex;
+    gap: 13px;
+} 
+.footer_widget_phone{
+    display: flex;
+    gap: 34px;
+}
+.footer_widget_email{
+    display: flex;
+    gap: 41px;
+}
+.footer_widget{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo{
+    max-width: 163px;
+}
+.footer_widget_inputMailBox{
+    padding: 20px 0 42px;
+    display: flex;
+    gap: 8px;
+}
+.footer_widget_inputMailBox input{
+    width: 280px;
+    border-radius: 4px;
+    border: 1px solid #E0E3EB;
+}
+.footer_widget_inputMailBox input::placeholder{
+    color: #A3AAC2;
+    padding-left: 8px;
+}
+.footer_widget_inputMailBox button{
+    width: 136px;
+    color: #fff;
+    background-color: #F9995D;
+    padding: 10px 0;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.footer_widget_socialMedia ul{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+.footer_copyRight{
+    background-color: #2947A9;
+    padding: 26px 0;
+    color: #fff;
+    font-size: 16px;
+}
