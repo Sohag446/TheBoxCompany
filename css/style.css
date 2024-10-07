@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: "Work Sans", sans-serif;
@@ -95,6 +96,27 @@ nav{
 }
 .hero{
     background-image: url("../images/hero_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -1px;
+    position: relative;
+}
+.slider_2{
+    background-image: url("../images/pixasquare-4ojhpgKpS68-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -1px;
+    position: relative;
+}
+.slider_3{
+    background-image: url("../images/danist-soh-8VPdkhfyfqo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -1px;
+    position: relative;
+}
+.slider_4{
+    background-image: url("../images/julien-moreau-688Fna1pwOQ-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -1px;
@@ -451,10 +473,13 @@ nav{
     display: flex;
     gap: 10px;
 }
-.consultation_contact_number p:last-child{
+.consultation_contact_number a{
     position: relative;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
 }
-.consultation_contact_number p:last-child::after{
+.consultation_contact_number a::after{
     content: "";
     width: 99%;
     border: 1px solid #E0E3EB;
@@ -509,16 +534,13 @@ nav{
     font-size: 24px;
     font-weight: 500px;
 }
-.project_demo_body{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 32px;
-    column-gap: 32px;
-    max-width: 800px;
+.project_slide{
+    max-width: 830px;
+    position: relative;
 }
-.project_demo_body div{
-    max-width: 384px;
-    width: 100%;
+.project_slide_items{
+    margin: 0 16px 16px 16px;
+    width: 385px;
 }
 .project_demo_document{
     background-color:#2947A9;
@@ -535,40 +557,6 @@ nav{
     font-weight: 500;
     letter-spacing: 0.22px;
 }
-.project_demo_btn{
-    display: flex;
-    margin-top: 32px;
-}
-.project_demo_dot ul{
-    display: flex;
-    gap: 27px;
-    padding: 0 33px;
-}
-.project_demo_dot ul li{
-    width: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 24px 0;
-}
-.project_demo_btn a p{
-    font-size: 18px;
-}
-.project_demo_btn img{
-    max-width: 26px;
-    width: 100%;
-    margin-top: 4px;
-}
-
-.owl-dot span{
-    background-color: #F6F8F7 !important;
-    font-size: 16px !important;
-}
-.owl-dot.active span{
-    background-color: #2947A9 !important;
-    font-size: 16px !important;
-
-}
 .project_demo_btn_back,.project_demo_btn_next{
     background-color: #292E3D;
     color: #fff;
@@ -579,6 +567,16 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+.project_demo_btn_back{
+    bottom: -89px;
+    position: absolute;
+    right: 1px;
+}
+.project_demo_btn_next{
+    position: absolute;
+    bottom: -89px;
+    left: 29px;
 }
 .project_demo_btn_back img, .project_demo_btn_next img{
     width: 26px;
@@ -595,9 +593,14 @@ nav{
     gap: 10px;
     display: block;
 }
-
-
-.owl-dots .owl-dot {
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    bottom: -60px;
+}
+.slick-dots li {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -606,33 +609,18 @@ nav{
     border-radius: 50%;
     cursor: pointer;
     object-fit: cover;
-    margin: 0 !important;
 }
 
-.owl-dots .owl-dot.active {
+.slick-dots li.slick-active button:before{
     background: url('../images/blue_dot.png') no-repeat center; /* Replace with your active dot image */
     background-size: cover;
 }
-.owl-nav {
-    display: flex;
-    justify-content: space-around;
+
+.project_slide .slick-slide {
+    text-align:left;
+    margin: 16px 0 16px 16px;
 }
-.owl-theme .owl-dots .owl-dot span {
-    margin: 0;
-}
-.owl-dots {
-    margin-top: -38px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.owl-nav {
-    display: flex;
-    justify-content: space-between;
-}
-.project_demo.owl-carousel.owl-theme.owl-loaded.owl-drag {
-    max-width: 800px;
-}
+
 
 
 /* =========================================
@@ -734,6 +722,7 @@ nav{
 ============================================*/
 .footer_widget{
     padding: 85px 0 80px;
+    color: #292E3D;
 }
 .footer_widget_contact_body div{
     padding-bottom: 32px;
@@ -749,9 +738,17 @@ nav{
     display: flex;
     gap: 34px;
 }
+.footer_widget_phone a{
+    font-size: 20px;
+    color: #292E3D;
+}
 .footer_widget_email{
     display: flex;
     gap: 41px;
+}
+.footer_widget_email a{
+    font-size: 20px;
+    color: #000;
 }
 .footer_widget{
     display: flex;

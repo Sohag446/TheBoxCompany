@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship First Project</title>
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
@@ -20,10 +20,10 @@
                         </div>
                         <div class="nav_manu">
                             <ul class="nav_url">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Projects</a></li>
-                                <li><a href="#">Services</a></li>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about_us">About Us</a></li>
+                                <li><a href="#project">Projects</a></li>
+                                <li><a href="#services">Services</a></li>
                                 <li><a href="#contact_us">Contact Us</a></li>
                             </ul>
                         </div>
@@ -31,11 +31,38 @@
                 </div>
             </nav>
 
-            <section class="hero">
-                <div class="container">
-                    <div class="hero_duco">
-                        <h1>Building things is our mission.</h1>
+            <section id="home" class="hero">
+                <div class="hero_body">
+                    <div class="slider_1">
+                        <div class="container">
+                            <div class="hero_duco">
+                                <h1>Building things is our mission.</h1>
+                            </div>
+                        </div>
                     </div>
+                    <div class="slider_2">
+                        <div class="container">
+                            <div class="hero_duco">
+                                <h1>Building things is our mission 2.</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_3">
+                        <div class="container">
+                            <div class="hero_duco">
+                                <h1>Building things is our mission 3.</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider_4">
+                        <div class="container">
+                            <div class="hero_duco">
+                                <h1>Building things is our mission 4.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="container">
                     <div class="hero_futurePJ">
                         <div class="hero_futurePJ_duco">
                             <h4>Feature Projects</h4>
@@ -77,9 +104,9 @@
                 </div>
             </div>
         </section>
-        <!-- ------------Structure of Reasons--------------  -->
+        <!-- ------------Structure of about_us--------------  -->
          <div class="container">
-             <section class="about_us">
+             <section id="about_us" class="about_us">
                 <div class="about_us_img"><img src="images/unsplash_6anudmpILw41.png" alt="Unsplash photo"></div>
                 <div class="about_us_docu">
                     <h3>About us</h3>
@@ -94,7 +121,7 @@
              </section>
          </div>
         <!-- ------------Structure of Services--------------  -->
-         <section class="services">
+         <section id="services" class="services">
             <div class="container">
                 <h3>Services</h3>
                 <div class="services_duco">
@@ -165,7 +192,7 @@
                 </div>
             </div>
           </section>
-         <!-- ------------Structure of Achievement--------------  -->
+         <!-- ------------Structure of consultation--------------  -->
           <section class="consultation">
             <div class="container">
                 <div class="consultation_body">
@@ -173,7 +200,7 @@
                         <h3>Free consultation with exceptional quality</h3>
                         <div class="consultation_contact_number">
                             <p>Just one call away:</p>
-                            <p>+84 1102 2703 </p>
+                            <a href="tel:+84-1102-2703">+84 1102 2703 </a>
                         </div>
                     </div>
                     <div class="consultation_btn hover_effect">
@@ -182,9 +209,9 @@
                 </div>
             </div>
           </section>
-         <!-- ------------Structure of Achievement--------------  -->
+         <!-- ------------Structure of project--------------  -->
           <div class="container">
-            <section class="project">
+            <section id="project" class="project">
                 <h3>Project</h3>
                 <div class="project_body">
                     <div class="project_duco">
@@ -195,32 +222,116 @@
                             <li><a href="#">Other</a></li>
                         </ul>
                     </div>
-                    <div class="project_demo owl-carousel owl-theme">
+                    <div class="project_demo">
 
                         <!-- carousel items---------- -->
-                        <div class="project_demo_body item">
-                            <div class="project_demo_wildstone">
+                        <div class="project_slide">
+                            <div class="project_demo_wildstone project_slide_items">
                                 <img src="images/unsplash_T0iFfJw-rB0.png" alt="wildstone">
                                 <div class="project_demo_document">
                                     <h4>Wildstone Infra Hotel</h4>
                                     <p>2715 Ash Dr. San Jose, South Dakota</p>
                                 </div>
                             </div>
-                            <div class="project_demo_building">
+                            <div class="project_demo_building project_slide_items">
                                 <img src="images/unsplash_8oRCwrBn_Fc.png" alt="wildstone">
                                 <div class="project_demo_document">
                                     <h4>Wish Stone Building</h4>
                                     <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
                                 </div>
                             </div>
-                            <div class="project_demo_parkinstonHouse">
+                            <div class="project_demo_parkinstonHouse project_slide_items">
                                 <img src="images/unsplash_UV81E0oXXWQ.png" alt="parkinston House">
                                 <div class="project_demo_document">
                                     <h4>Mr. Parkinston’s House</h4>
                                     <p>3517 W. Gray St. Utica, Pennsylvania</p>
                                 </div>
                             </div>
-                            <div class="project_demo_oreganoHeight">
+                            <div class="project_demo_oreganoHeight project_slide_items">
+                                <img src="images/unsplash_gMes5dNykus.png" alt="wildstone">
+                                <div class="project_demo_document">
+                                    <h4>Oregano Height</h4>
+                                    <p>2464 Royal Ln. Mesa, New Jersey </p>
+                                </div>
+                            </div>
+                            <div class="project_demo_wildstone project_slide_items">
+                                <img src="images/unsplash_T0iFfJw-rB0.png" alt="wildstone">
+                                <div class="project_demo_document">
+                                    <h4>Wildstone Infra Hotel</h4>
+                                    <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                </div>
+                            </div>
+                            <div class="project_demo_building project_slide_items">
+                                <img src="images/unsplash_8oRCwrBn_Fc.png" alt="wildstone">
+                                <div class="project_demo_document">
+                                    <h4>Wish Stone Building</h4>
+                                    <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                </div>
+                            </div>
+                            <div class="project_demo_parkinstonHouse project_slide_items">
+                                <img src="images/unsplash_UV81E0oXXWQ.png" alt="parkinston House">
+                                <div class="project_demo_document">
+                                    <h4>Mr. Parkinston’s House</h4>
+                                    <p>3517 W. Gray St. Utica, Pennsylvania</p>
+                                </div>
+                            </div>
+                            <div class="project_demo_oreganoHeight project_slide_items">
+                                <img src="images/unsplash_gMes5dNykus.png" alt="wildstone">
+                                <div class="project_demo_document">
+                                    <h4>Oregano Height</h4>
+                                    <p>2464 Royal Ln. Mesa, New Jersey </p>
+                                </div>
+                            </div>
+                            <div class="project_demo_wildstone project_slide_items">
+                                <img src="images/unsplash_T0iFfJw-rB0.png" alt="wildstone">
+                                <div class="project_demo_document">
+                                    <h4>Wildstone Infra Hotel</h4>
+                                    <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                </div>
+                            </div>
+                            <div class="project_demo_building project_slide_items">
+                                <img src="images/unsplash_8oRCwrBn_Fc.png" alt="wildstone">
+                                <div class="project_demo_document">
+                                    <h4>Wish Stone Building</h4>
+                                    <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                </div>
+                            </div>
+                            <div class="project_demo_parkinstonHouse project_slide_items">
+                                <img src="images/unsplash_UV81E0oXXWQ.png" alt="parkinston House">
+                                <div class="project_demo_document">
+                                    <h4>Mr. Parkinston’s House</h4>
+                                    <p>3517 W. Gray St. Utica, Pennsylvania</p>
+                                </div>
+                            </div>
+                            <div class="project_demo_oreganoHeight project_slide_items">
+                                <img src="images/unsplash_gMes5dNykus.png" alt="wildstone">
+                                <div class="project_demo_document">
+                                    <h4>Oregano Height</h4>
+                                    <p>2464 Royal Ln. Mesa, New Jersey </p>
+                                </div>
+                            </div>
+                            <div class="project_demo_wildstone project_slide_items">
+                                <img src="images/unsplash_T0iFfJw-rB0.png" alt="wildstone">
+                                <div class="project_demo_document">
+                                    <h4>Wildstone Infra Hotel</h4>
+                                    <p>2715 Ash Dr. San Jose, South Dakota</p>
+                                </div>
+                            </div>
+                            <div class="project_demo_building project_slide_items">
+                                <img src="images/unsplash_8oRCwrBn_Fc.png" alt="wildstone">
+                                <div class="project_demo_document">
+                                    <h4>Wish Stone Building</h4>
+                                    <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
+                                </div>
+                            </div>
+                            <div class="project_demo_parkinstonHouse project_slide_items">
+                                <img src="images/unsplash_UV81E0oXXWQ.png" alt="parkinston House">
+                                <div class="project_demo_document">
+                                    <h4>Mr. Parkinston’s House</h4>
+                                    <p>3517 W. Gray St. Utica, Pennsylvania</p>
+                                </div>
+                            </div>
+                            <div class="project_demo_oreganoHeight project_slide_items">
                                 <img src="images/unsplash_gMes5dNykus.png" alt="wildstone">
                                 <div class="project_demo_document">
                                     <h4>Oregano Height</h4>
@@ -228,151 +339,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- carousel items---------- -->
-
-                        <!-- carousel items---------- -->
-                        <div class="project_demo_body item">
-                            <div class="project_demo_wildstone">
-                                <img src="images/unsplash_T0iFfJw-rB0.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Wildstone Infra Hotel</h4>
-                                    <p>2715 Ash Dr. San Jose, South Dakota</p>
-                                </div>
-                            </div>
-                            <div class="project_demo_building">
-                                <img src="images/unsplash_8oRCwrBn_Fc.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Wish Stone Building</h4>
-                                    <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
-                                </div>
-                            </div>
-                            <div class="project_demo_parkinstonHouse">
-                                <img src="images/unsplash_UV81E0oXXWQ.png" alt="parkinston House">
-                                <div class="project_demo_document">
-                                    <h4>Mr. Parkinston’s House</h4>
-                                    <p>3517 W. Gray St. Utica, Pennsylvania</p>
-                                </div>
-                            </div>
-                            <div class="project_demo_oreganoHeight">
-                                <img src="images/unsplash_gMes5dNykus.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Oregano Height</h4>
-                                    <p>2464 Royal Ln. Mesa, New Jersey </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- carousel items---------- -->
-
-                        <!-- carousel items---------- -->
-                        <div class="project_demo_body item">
-                            <div class="project_demo_wildstone">
-                                <img src="images/unsplash_T0iFfJw-rB0.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Wildstone Infra Hotel</h4>
-                                    <p>2715 Ash Dr. San Jose, South Dakota</p>
-                                </div>
-                            </div>
-                            <div class="project_demo_building">
-                                <img src="images/unsplash_8oRCwrBn_Fc.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Wish Stone Building</h4>
-                                    <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
-                                </div>
-                            </div>
-                            <div class="project_demo_parkinstonHouse">
-                                <img src="images/unsplash_UV81E0oXXWQ.png" alt="parkinston House">
-                                <div class="project_demo_document">
-                                    <h4>Mr. Parkinston’s House</h4>
-                                    <p>3517 W. Gray St. Utica, Pennsylvania</p>
-                                </div>
-                            </div>
-                            <div class="project_demo_oreganoHeight">
-                                <img src="images/unsplash_gMes5dNykus.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Oregano Height</h4>
-                                    <p>2464 Royal Ln. Mesa, New Jersey </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- carousel items---------- -->
-
-                        <!-- carousel items---------- -->
-                        <div class="project_demo_body item">
-                            <div class="project_demo_wildstone">
-                                <img src="images/unsplash_T0iFfJw-rB0.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Wildstone Infra Hotel</h4>
-                                    <p>2715 Ash Dr. San Jose, South Dakota</p>
-                                </div>
-                            </div>
-                            <div class="project_demo_building">
-                                <img src="images/unsplash_8oRCwrBn_Fc.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Wish Stone Building</h4>
-                                    <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
-                                </div>
-                            </div>
-                            <div class="project_demo_parkinstonHouse">
-                                <img src="images/unsplash_UV81E0oXXWQ.png" alt="parkinston House">
-                                <div class="project_demo_document">
-                                    <h4>Mr. Parkinston’s House</h4>
-                                    <p>3517 W. Gray St. Utica, Pennsylvania</p>
-                                </div>
-                            </div>
-                            <div class="project_demo_oreganoHeight">
-                                <img src="images/unsplash_gMes5dNykus.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Oregano Height</h4>
-                                    <p>2464 Royal Ln. Mesa, New Jersey </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- carousel items---------- -->
-
-                        <!-- carousel items---------- -->
-                        <div class="project_demo_body item">
-                            <div class="project_demo_wildstone">
-                                <img src="images/unsplash_T0iFfJw-rB0.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Wildstone Infra Hotel</h4>
-                                    <p>2715 Ash Dr. San Jose, South Dakota</p>
-                                </div>
-                            </div>
-                            <div class="project_demo_building">
-                                <img src="images/unsplash_8oRCwrBn_Fc.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Wish Stone Building</h4>
-                                    <p>2972 Westheimer Rd. Santa Ana, Illinois </p>
-                                </div>
-                            </div>
-                            <div class="project_demo_parkinstonHouse">
-                                <img src="images/unsplash_UV81E0oXXWQ.png" alt="parkinston House">
-                                <div class="project_demo_document">
-                                    <h4>Mr. Parkinston’s House</h4>
-                                    <p>3517 W. Gray St. Utica, Pennsylvania</p>
-                                </div>
-                            </div>
-                            <div class="project_demo_oreganoHeight">
-                                <img src="images/unsplash_gMes5dNykus.png" alt="wildstone">
-                                <div class="project_demo_document">
-                                    <h4>Oregano Height</h4>
-                                    <p>2464 Royal Ln. Mesa, New Jersey </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- carousel items---------- -->
-
-                        
-                        <!-- <div class="project_demo_btn"><div class="project_demo_btn_back hover_effect"><img src="images/Vector_back.png" alt="Back"> <p>Back</p></div>
-                        
-                        <div class="project_demo_btn_next hover_effect"><p>Next</p> <img src="images/Vector_next.png" alt="Next"></div>  -->
-                        
+  
                     </div>
                 </div>
             </section>
           </div>
         <!-- ------------Structure of Contact Us--------------  -->
-     <section class="contact_us">
+     <section id="contact_us" class="contact_us">
          <div class="container">
             <div class="contact_body">
                 <div class="contact_us_docu">
@@ -423,11 +396,11 @@
                         </div>
                         <div class="footer_widget_phone">
                             <h5>Phone:</h5>
-                            <p>+84 1102 2703</p>
+                            <a href="tel:+84-1102-2703">+84 1102 2703</a>
                         </div>
                         <div class="footer_widget_email">
                             <h5>Email:</h5>
-                            <p>hello@thebox.com</p>
+                            <a href="mailto: hello@thebox.com">hello@thebox.com</a>
                         </div>
                     </div>
                     <div class="footer_logo">
@@ -436,10 +409,10 @@
                 </div>
                 <div class="footer_widget_media">
                     <h5>Newsletter: </h5>
-                    <div class="footer_widget_inputMailBox">
-                        <input type="email" placeholder="Your email here">
-                        <button class="hover_effect">Subscribe</button>
-                    </div>
+                        <form class="footer_widget_inputMailBox" action="">
+                            <input type="email" placeholder="Your email here">
+                            <button class="hover_effect">Subscribe</button>
+                        </form>
                     <div class="footer_widget_socialMedia">
                         <h5>Social:</h5>
                         <ul>
@@ -460,7 +433,7 @@
      
 
      <script src="script/jquery.min.js"></script>
-     <script src="script/owl.carousel.min.js"></script>
+     <script src="script/slick.min.js"></script>
      <script src="script/javaScript.js"></script>
     </body>
 </html>
