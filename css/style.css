@@ -95,39 +95,38 @@ nav{
     font-size: 14px;
 }
 .hero{
-    background-image: url("../images/hero_banner.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -1px;
+    height: 646px;
     position: relative;
+}
+.slider_1{
+    background-image: url("../images/hero_banner.png");
 }
 .slider_2{
     background-image: url("../images/pixasquare-4ojhpgKpS68-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -1px;
-    position: relative;
 }
 .slider_3{
     background-image: url("../images/danist-soh-8VPdkhfyfqo-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -1px;
-    position: relative;
 }
 .slider_4{
     background-image: url("../images/julien-moreau-688Fna1pwOQ-unsplash.jpg");
+}
+.slider_1,.slider_2,.slider_3,.slider_4{
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -1px;
-    position: relative;
+    height: 646px;
 }
 .hero_duco{
     max-width: 556px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .hero_duco h1{
-    padding: 238px 0;
     letter-spacing: 3px;
+    height: 646px;
+    display: flex;
+    align-items: center;
 
 }
 .hero_futurePJ{
@@ -510,14 +509,24 @@ nav{
 .project h3{
     color: #292E3D;
 }
-.project_duco h4{
+.project_duco{
+    padding-top: 40px;
+}
+.project_duco li{
+    color: #C2C7D6;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.project_duco .active{
     color:#2947A9;
     font-size: 24px;
     font-weight: 700;
-    padding: 40px 0 20px 16px;
     position: relative;
 }
-.project_duco h4::before{
+.project_duco .active::before{
     content: "";
     position: absolute;
     width: 4px;
@@ -525,15 +534,12 @@ nav{
     background-color: #2947A9;
     left: 0px;
 }
-.project_duco li{
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
-.project_duco li a {
-    color: #C2C7D6;
-    font-size: 24px;
-    font-weight: 500px;
-}
+.project_slide_items {
+    display: none;
+  } 
+  .active {
+    display: block;
+  }
 .project_slide{
     max-width: 830px;
     position: relative;
@@ -571,12 +577,12 @@ nav{
 .project_demo_btn_back{
     bottom: -89px;
     position: absolute;
-    right: 1px;
+    right: 0px;
 }
 .project_demo_btn_next{
     position: absolute;
     bottom: -89px;
-    left: 29px;
+    left: 32px;
 }
 .project_demo_btn_back img, .project_demo_btn_next img{
     width: 26px;
@@ -593,18 +599,24 @@ nav{
     gap: 10px;
     display: block;
 }
+.project_slider_tab img{
+    max-height: 247px;
+    height: 100%;
+    object-fit: cover;
+}
 .slick-dots {
     display: flex;
     justify-content: center;
     gap: 16px;
     position: absolute;
     bottom: -60px;
+    left: 0px;
 }
 .slick-dots li {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url('../images/white_dot.png') no-repeat center; /* Replace with your inactive dot image */
+    background: url('../images/white_dot.png');
     background-size: cover;
     border-radius: 50%;
     cursor: pointer;
@@ -612,7 +624,7 @@ nav{
 }
 
 .slick-dots li.slick-active button:before{
-    background: url('../images/blue_dot.png') no-repeat center; /* Replace with your active dot image */
+    background: url('../images/blue_dot.png');
     background-size: cover;
 }
 
@@ -620,11 +632,23 @@ nav{
     text-align:left;
     margin: 16px 0 16px 16px;
 }
+div#slick-slide12,
+div#slick-slide22,
+div#slick-slide32,
+div#slick-slide42{
+    margin-left: -15px;
+}
 
+.project_demo {
+    display: none;
+}
 
+.project_demo.active {
+    display: block !important;
+}
 
 /* =========================================
-*=============footer aria design============
+*=============Contact_us aria design========
 ============================================*/
 .contact_us{
     background-color: #F6F8F7;
@@ -646,10 +670,6 @@ nav{
 .contact_us_input_indicatesRequired{
     padding: 8px 0 28px;
 }
-.contact_us_input form::placeholder{
-    font-size: 18px;
-    font-weight: 400;
-}
 .contact_us_input form input,
 .contact_us_input textarea::placeholder{
     padding: 10px 8px;
@@ -664,9 +684,12 @@ nav{
     gap: 32px;
   }
   .contact_us_input input{
-    width: 100%;
+    width: 280px;
     padding: 10px 0;
     border: 1px solid #E0E3EB;
+  }
+  .contact_us_input .contact_us_input_contacting{
+    width: 280px;
   }
   .contact_us_input textarea{
     width: 100%;
@@ -696,6 +719,25 @@ nav{
     border-radius: 2px;
     border: none;
 }
+.contact_us_input_name,
+.contact_us_input_Email,
+.contact_us_input_contacting,
+.contact_us_input_Phone{
+    position: relative;
+}
+form label{
+    padding: 10px 8px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #A3AAC2;
+    position: absolute;
+}
+label span{
+    color: #ED6565;
+}
+select option{
+    color: red;
+}
 .contact_us_input select{
     color: #A3AAC2;
     font-size: 18px;
@@ -715,6 +757,10 @@ nav{
   ::placeholder{
     color: #A3AAC2;
   }
+  .disabled {
+    display: none; /* Hide the label */
+}
+
 
 
 /* =========================================
