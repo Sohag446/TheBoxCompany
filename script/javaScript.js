@@ -7,7 +7,7 @@ $('.hero_body').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     loop:true,
-    autoplay: true,
+    autoplay: false,
 });
 
 $(document).ready(function() {
@@ -25,6 +25,20 @@ $(document).ready(function() {
     loop:true,
     });
 
+    $('.project_demo.active .project_slide').on('afterChange', function(event, slick, currentSlide){
+        const totalSlides = slick.slideCount;
+        const slidesToShow = slick.options.slidesToShow;
+
+        $('.project_demo_btn_back, .project_demo_btn_next').css('opacity', '1');
+
+        if (currentSlide === 0) {
+            $('.project_demo_btn_back').css('opacity', '0.5');
+        }
+        if (currentSlide + slidesToShow >= totalSlides) {
+            $('.project_demo_btn_next').css('opacity', '0.5');
+        }
+    });
+    
     $('.project_li').on('click', function() {
         var selectedTab = $(this).data('tab');
 
@@ -57,8 +71,24 @@ $(document).ready(function() {
             nextArrow:'<div class="project_demo_btn_next hover_effect"><p>Next</p><img src="images/Vector_next.png" alt="Vector Next"></div>',
             loop:true,
                 });
+
+                $('.project_demo.active .project_slide').on('afterChange', function(event, slick, currentSlide){
+                    const totalSlides = slick.slideCount;
+                    const slidesToShow = slick.options.slidesToShow;
+
+                    $('.project_demo_btn_back, .project_demo_btn_next').css('opacity', '1');
+
+                    if (currentSlide === 0) {
+                        $('.project_demo_btn_back').css('opacity', '0.5');
+                    }
+
+                    if (currentSlide + slidesToShow >= totalSlides) {
+                        $('.project_demo_btn_next').css('opacity', '0.5');
+                    }
+                });
     });
 });
+
 
 
 $(document).ready(function() {
@@ -82,3 +112,5 @@ $(document).ready(function() {
         }
     });
 });
+
+  

@@ -86,13 +86,15 @@ nav{
 .nav_url li:hover{
     transform: scale(1.1);
 }
-.nav_url li:last-child a{
-    color: #F9995D;
-}
 .nav_manu a{
-    font-weight: 700;
+    font-weight: 600;
     color: #14171F;
     font-size: 14px;
+}
+.nav_url li:last-child a{
+    color: #F9995D;
+    font: 700;
+    font-size: 18px;
 }
 .hero{
     height: 646px;
@@ -122,12 +124,13 @@ nav{
     flex-direction: column;
     align-items: center;
 }
-.hero_duco h1{
-    letter-spacing: 3px;
+.hero_docu_body{
     height: 646px;
     display: flex;
     align-items: center;
-
+}
+.hero_duco h1{
+    letter-spacing: 3px;
 }
 .hero_futurePJ{
     max-width: 416px;
@@ -573,6 +576,9 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    z-index: 99;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 .project_demo_btn_back{
     bottom: -89px;
@@ -654,7 +660,9 @@ div#slick-slide42{
     background-color: #F6F8F7;
 }
 .contact_body{
-    padding: 60px 312px;
+    margin: auto;
+    max-width: 592px;
+    padding: 60px 0;
 }
 .contact_us_docu{
     text-align: center;
@@ -671,13 +679,12 @@ div#slick-slide42{
     padding: 8px 0 28px;
 }
 .contact_us_input form input,
-.contact_us_input textarea::placeholder{
+.contact_us_input textarea{
     padding: 10px 8px;
     font-size: 18px;
     font-weight: 400;
     font-family: "Work Sans", sans-serif;
   }
- 
   .contact_us_input_nameEmail, 
   .contact_us_input_contactingPhone{
     display: flex;
@@ -812,10 +819,15 @@ select option{
     width: 280px;
     border-radius: 4px;
     border: 1px solid #E0E3EB;
+    font-size: 18px;
+    padding-left: 8px;
+    font-family: "Work Sans", sans-serif;
+
 }
 .footer_widget_inputMailBox input::placeholder{
     color: #A3AAC2;
-    padding-left: 8px;
+    font-family: "Work Sans", sans-serif;
+
 }
 .footer_widget_inputMailBox button{
     width: 136px;
